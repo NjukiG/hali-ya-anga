@@ -35,12 +35,13 @@ function Forecast({ data }) {
               <AccordionItemHeading>
                 <AccordionItemButton>
                   <div className="daily-item">
+                  <label className="day">{forecastDays[index]}</label>
+
                     <img
                       alt="weather"
                       className="icon-small"
                       src={`icons/${item.weather[0].icon}.png`}
                     />
-                    <label className="day">{forecastDays[index]}</label>
                     <label className="description">{item.weather[0].description}</label>
                     <label className="min-max">{Math.round(item.main.temp_min)}°C / {Math.round(item.main.temp_max)}°C</label>
 

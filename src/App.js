@@ -38,6 +38,7 @@ function App() {
   console.log(forecast);
   return (
     <div className="container">
+      <h1>Hali ya Anga:</h1>
       <Search onSearchChange={handleSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <Forecast data={forecast} />}
