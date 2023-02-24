@@ -6,11 +6,11 @@ function CurrentWeather({ data }) {
     <div className="weather">
       <div className="top">
         <div>
-          <p className="city">Nairobi</p>
-          <p className="weather-description">Sunny</p>
+          <p className="city">{data.city}</p>
+          <p className="weather-description">{data.weather[0].description}</p>
         </div>
 
-        <img className="weather-icon" src="icons/01d.png" alt="weather" />
+        <img className="weather-icon" src={`icons/${data.weather[0].icon}.png`} alt="weather" />
       </div>
       <div className="bottom">
         <p className="temperature">18°C</p>
