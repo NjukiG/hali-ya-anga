@@ -1,7 +1,7 @@
 import React from "react";
 import "./CurrentWeather.css";
 
-function CurrentWeather() {
+function CurrentWeather({ data }) {
   return (
     <div className="weather">
       <div className="top">
