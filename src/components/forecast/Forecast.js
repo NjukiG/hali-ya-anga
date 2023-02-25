@@ -55,33 +55,39 @@ function Forecast({ data }) {
               <AccordionItemPanel>
                 <div className="daily-details-grid">
                   <div className="daily-details-grid-item">
-                    <label>Pressure</label>
-                    <label>{item.main.pressure}</label>
+                    <label className="title-label">Pressure</label>
+                    <label className="value-label">
+                      {item.main.pressure} Pa
+                    </label>
                   </div>
 
                   <div className="daily-details-grid-item">
-                    <label>Humidity</label>
-                    <label>{item.main.humidity}</label>
+                    <label className="title-label">Humidity</label>
+                    <label className="value-label">{item.main.humidity}%</label>
                   </div>
 
                   <div className="daily-details-grid-item">
-                    <label>Clouds</label>
-                    <label>{item.clouds.all}</label>
+                    <label className="title-label">Clouds</label>
+                    <label className="value-label">{item.clouds.all}</label>
                   </div>
 
                   <div className="daily-details-grid-item">
-                    <label>Wind Speed</label>
-                    <label>{item.wind.speed}km/h</label>
+                    <label className="title-label">Wind Speed</label>
+                    <label className="value-label">{item.wind.speed}km/h</label>
                   </div>
 
                   <div className="daily-details-grid-item">
-                    <label>Sea level</label>
-                    <label>{item.main.sea_level}m</label>
+                    <label className="title-label">Sea level</label>
+                    <label className="value-label">
+                      {item.main.sea_level}m
+                    </label>
                   </div>
 
                   <div className="daily-details-grid-item">
-                    <label>Feels like</label>
-                    <label>{Math.round(item.main.feels_like)}°C</label>
+                    <label className="title-label">Feels like</label>
+                    <label className="value-label">
+                      {Math.round(item.main.feels_like)}°C
+                    </label>
                   </div>
                 </div>
               </AccordionItemPanel>

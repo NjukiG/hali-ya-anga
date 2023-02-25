@@ -5,7 +5,6 @@ import { WEATHER_API_URL, WEATHER_API_KEY } from "./api/api";
 import { useState } from "react";
 import Forecast from "./components/forecast/Forecast";
 
-
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
